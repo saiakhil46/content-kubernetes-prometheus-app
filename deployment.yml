@@ -9,7 +9,7 @@ spec:
   ports:
     - port: 3000
       targetPort: 3000
-      nodePort: 8001
+      nodePort: 32305
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
         - name: comicbox
-          image: rivethead42/comicbox
+          image: saiakhil46/comicbox
           ports:
             - containerPort: 3000
